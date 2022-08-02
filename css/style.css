@@ -138,6 +138,31 @@ ul {
     text-decoration: none;
     color: #25252c;
 }
+.messenger a {
+    position: relative;
+}
+.messenger a:first-child::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -28px;
+    width: 17px;
+    height: 13px;
+    transform: translateY(-50%);
+    background-image: url("../img/sprite.png");
+    background-position: -75px -22px;
+}
+.messenger a:last-child::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -28px;
+    width: 18px;
+    height: 19px;
+    transform: translateY(-50%);
+    background-image: url("../img/sprite.png");
+    background-position: -95px -22px;
+}
 
 .order-call a {
     display: inline-block;
