@@ -110,16 +110,17 @@ ul {
 .phones a:first-child {
     position: relative;
 }
-.phones a:first-child::before{
+
+.phones a:first-child::before {
     content: '';
     position: absolute;
     top: 50%;
     left: -28px;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 17px;
     transform: translateY(-50%);
     background-image: url("../img/sprite.png");
-    background-position: -55px -21px ;
+    background-position: -55px -21px;
 }
 
 .phones a:first-child,
@@ -138,10 +139,12 @@ ul {
     text-decoration: none;
     color: #25252c;
 }
+
 .messenger a {
     position: relative;
 }
-.messenger a:first-child::before{
+
+.messenger a:first-child::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -152,7 +155,8 @@ ul {
     background-image: url("../img/sprite.png");
     background-position: -75px -22px;
 }
-.messenger a:last-child::before{
+
+.messenger a:last-child::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -180,4 +184,133 @@ ul {
 
 .order-call a:hover {
     background-color: #fd8300;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    main                                    */
+/* -------------------------------------------------------------------------- */
+.banner {
+    padding: 50px 0;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), #000 url('../img/banner.jpg');
+    background-size: cover;
+}
+
+.proposition {
+    text-transform: uppercase;
+    font-size: 35rem;
+    letter-spacing: 2rem;
+    line-height: 28rem;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.proposition-desc {
+    font-size: 14rem;
+    line-height: 24rem;
+    margin: 15px 0;
+}
+
+.proposition-price {
+    color: #fd8300;
+    font-size: 24rem;
+    line-height: 24rem;
+    font-weight: bold;
+}
+
+.proposition-price b {
+    font-size: 40rem;
+    line-height: 40rem;
+}
+
+.proposition-price sup {
+    font-size: 12rem;
+}
+
+.main-content {
+    width: 75%;
+    padding: 35px 0;
+}
+
+article {
+    padding-bottom: 35px;
+    border-bottom: 1px solid #e4e4ec;
+}
+
+h1 {
+    font-size: 30rem;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+article p:last-child {
+    margin-bottom: 25px;
+}
+
+article a {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #fd8300;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+article a:hover {
+    color: #24242b;
+}
+
+section {
+    padding-top: 35px;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 25px;
+}
+section a{
+    display: inline-block;
+    width: 31%;
+    text-decoration: none;
+}
+section figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    background-color: #25252c;
+
+}
+figcaption{
+    padding-top: 10px;
+}
+section h3 {
+    font-size: 14rem;
+    line-height: 24rem;
+    color: #1f1f56;
+    font-weight: bold;
+}
+section a:hover h3{
+    text-decoration: underline;
+}
+section p {
+    font-size: 13rem;
+    line-height: 18rem;
+    color: #9999a6;
+    
+}
+figcaption sup{
+    font-size: 9rem;
 }
