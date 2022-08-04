@@ -334,24 +334,22 @@ section p {
 figcaption sup {
     font-size: 9rem;
 }
-
-.information ul {
+footer{
+    background-color: #ededf4;
+}
+.information a,
+.information-about a {
     font-size: 14px;
     line-height: 26px;
     color: #666666;
+    text-decoration: none;
 }
 
-.information-about ul {
-    font-size: 14px;
-    line-height: 26px;
-    color: #666666;
-}
-
-.information,
+.information a:hover,
 .information-about a:hover {
     color: #fd8300;
     transition: 0.3s;
-
+    text-decoration: underline;
 }
 
 .copyright {
@@ -359,4 +357,6 @@ figcaption sup {
     line-height: 18px;
     color: #9999a6;
     text-align: center;
+    background-color: #dcdce5;
+    padding: 15px 0;
 }
