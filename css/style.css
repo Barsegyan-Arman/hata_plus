@@ -1,3 +1,16 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.eot');
+    src: url('../fonts/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 html {
     font-size: 1px;
 }
@@ -281,11 +294,13 @@ h2 {
     font-family: "Roboto Slab";
     margin-bottom: 25px;
 }
-section a{
+
+section a {
     display: inline-block;
     width: 31%;
     text-decoration: none;
 }
+
 section figure img {
     width: 100%;
     object-fit: cover;
@@ -293,24 +308,55 @@ section figure img {
     background-color: #25252c;
 
 }
-figcaption{
+
+figcaption {
     padding-top: 10px;
 }
+
 section h3 {
     font-size: 14rem;
     line-height: 24rem;
     color: #1f1f56;
     font-weight: bold;
 }
-section a:hover h3{
+
+section a:hover h3 {
     text-decoration: underline;
 }
+
 section p {
     font-size: 13rem;
     line-height: 18rem;
     color: #9999a6;
-    
+
 }
-figcaption sup{
+
+figcaption sup {
     font-size: 9rem;
+}
+
+.information ul {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.information-about ul {
+    font-size: 14px;
+    line-height: 26px;
+    color: #666666;
+}
+
+.information,
+.information-about a:hover {
+    color: #fd8300;
+    transition: 0.3s;
+
+}
+
+.copyright {
+    font-size: 13px;
+    line-height: 18px;
+    color: #9999a6;
+    text-align: center;
 }
