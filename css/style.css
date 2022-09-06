@@ -31,6 +31,7 @@ ul {
 
 .wrapper {
     width: 80%;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -45,7 +46,7 @@ ul {
 /* -------------------------------------------------------------------------- */
 
 .header-line {
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: #1f1f56;
 
 }
@@ -111,6 +112,7 @@ ul {
 .messenger {
     display: flex;
     flex-direction: column;
+    padding-left: 50px;
 }
 
 .phones a {
@@ -145,6 +147,19 @@ ul {
 .phones a:hover,
 .messenger a:hover {
     text-decoration: underline;
+}
+
+.line {
+    position: relative;
+}
+
+.line::before{
+    content: '';
+    position: absolute;
+    right: -28px;
+    height: 100%;
+    width: 1px;
+    background-color: #e4e4ec;
 }
 
 .messenger a {
@@ -189,11 +204,10 @@ ul {
     color: #25252c;
     font-weight: bold;
     border: 2px solid #fd8300;
-    padding: 15px 30px;
+    padding: 12px 30px;
     text-decoration: none;
     border-radius: 25px;
     transition: .3s;
-
 }
 
 .order-call a:hover {
@@ -210,6 +224,7 @@ ul {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), #000 url('../img/banner.jpg');
     background-size: cover;
 }
+
 .proposition {
     text-transform: uppercase;
     font-size: 35rem;
@@ -344,6 +359,8 @@ figcaption sup {
 /* -------------------------------------------------------------------------- */
 
 aside {
+    position: sticky;
+    top: 35px;
     width: 22%;
     border-radius: 3px;
     overflow: hidden;
@@ -352,13 +369,14 @@ aside {
 aside p {
     font-size: 16px;
     line-height: 24px;
-    color: #ffffff;
+    color: #fff;
     font-weight: 700;
     font-family: "Roboto Slab";
     background-color: #1f1f55;
-    padding: 15px;
+    padding: 11px 15px;
 }
-aside li:first-child a{
+
+aside li:first-child a {
     border: none;
 }
 
@@ -367,7 +385,7 @@ aside a {
     position: relative;
     font-size: 14rem;
     line-height: 24rem;
-    padding: 15px;
+    padding: 10px 15px;
     padding-right: 25px;
     color: #25252c;
     text-decoration: none;
@@ -381,8 +399,8 @@ aside a::before {
     position: absolute;
     top: 50%;
     right: 10px;
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
     border: 2px solid #656565;
     border-left-color: transparent;
     border-bottom-color: transparent;
@@ -417,7 +435,8 @@ aside a:hover+.subaside {
 .subaside a {
     color: #666;
     padding: 15px 30px;
-    border: none;}
+    border: none;
+}
 
 .subaside a::before {
     display: none;
